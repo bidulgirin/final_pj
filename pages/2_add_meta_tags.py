@@ -1,12 +1,11 @@
 import os
 import shutil
-import streamlit
 from bs4 import BeautifulSoup
 import streamlit as st
 
 
 # Streamlit index.html 경로 동적 탐색
-streamlit_static_dir = os.path.join(os.path.dirname(streamlit.__file__), 'static')
+streamlit_static_dir = os.path.join(os.path.dirname(st.__file__), 'static')
 streamlit_path = os.path.join(streamlit_static_dir, 'index.html')
 
 # 원본 index.html 백업 생성
